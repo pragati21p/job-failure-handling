@@ -1,0 +1,5 @@
+DB_HOST = 'test'
+DB_PORT = '6150'
+DB_USER = 'application-developer'
+DB_NAME = 'MASTERDB'
+SSL_CA_PATH = 'ssl_ca_path.pem'
