@@ -13,10 +13,10 @@ Create lambda that is triggered on AWS glue job failure. This lambda performs fo
 - sends an email to Amazon SNS subscribers
 - logs the entry in DB table **audit_logs**
 
-id|job_name|job_run_id|error_message|event_time
-- | ------ | -------- | ----------- | --------
-1|my-glue-job|jr_123456789|Exception: Data format mismatch|2024-11-29 10:15:00
+| id|job_name|job_run_id|error_message|event_time |
+| - | ------ | -------- | ----------- | -------- |
+|1|my-glue-job|jr_123456789|Exception: Data format mismatch|2024-11-29 10:15:00 |
 
-> This implementation ensures failures are logged both in SNS for notifications and in the database for auditing purposes.
+This implementation ensures failures are logged both in SNS for notifications and in the database for auditing purposes.
 
 `Note: See test_lambda_function.py for unit tests`
